@@ -12,4 +12,4 @@ def check_password(password):
 # program that checks passwordz
 
 
-check_password("1234password")
+check_password(input("Enter a password to check if it complies to basic online safety standards: "))
