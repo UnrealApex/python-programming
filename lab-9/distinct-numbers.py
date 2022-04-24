@@ -1,6 +1,6 @@
 # list of numbers
 numbers = input(
-    "Enter integers between 1 and 100 with a space between each: ").strip().split(" ")
+    "Enter a set of integers to find the distinct ones in the set ").strip().split(" ")
 # convert each array item to the type integer
 numbers = map(int, numbers)
 # print the results
