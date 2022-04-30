@@ -1,6 +1,4 @@
 # note that some of the decimal points are rounded up to the hundreths place so they follow the price format: xx.xx
-# note that I also found this problem a little challenging because I don't know how to do taxes
-# as a challenge, over the weekend I'll try refactoring  the program to use a payroll class
 # get our inputs
 name = str(input("Enter employee's name: "))
 hours_worked = float(input("Enter number of hours worked in a week: "))
