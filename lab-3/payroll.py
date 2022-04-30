@@ -1,4 +1,3 @@
-# solution to problem 3
 # note that some of the decimal points are rounded up to the hundreths place so they follow the price format: xx.xx
 # note that I also found this problem a little challenging because I don't know how to do taxes
 # as a challenge, over the weekend I'll try refactoring  the program to use a payroll class

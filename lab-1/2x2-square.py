@@ -1,4 +1,3 @@
-# solution to the second question
 import turtle
 import time
 
