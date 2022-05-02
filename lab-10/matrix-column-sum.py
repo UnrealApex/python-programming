@@ -1,3 +1,4 @@
+# program that prints out the sum of all the numbers in the column in a given matrix
 def sumColumn(matrix, column):
     sum = 0
     for i in range(len(matrix)):
