@@ -1,15 +1,7 @@
-# inputs
-row_1 = input("Enter 3-by-4 matrix row for row 1: ").strip().split(" ")
-row_2 = input("Enter 3-by-4 matrix row for row 2: ").strip().split(" ")
-row_3 = input("Enter 3-by-4 matrix row for row 3: ").strip().split(" ")
+def sumColumn(matrix, column):
+    sum = 0
+    for i in range(len(matrix)):
+        sum += matrix[i][column]
+    print(f"Sum of the elements for column {column} is {sum}")
 
-# convert each value in the matrix rows to a float
-row_1 = map(float, row_1) 
-row_2 = map(float, row_2) 
-row_3 = map(float, row_3) 
-
-# print the result
-print()
-print(f"The sum of the elements for column 1 is {sum(row_1)}")
-print(f"The sum of the elements for column 2 is {sum(row_2)}")
-print(f"The sum of the elements for column 3 is {sum(row_3)}")
+sumColumn([[1.5, 2, 3, 4], [5.5, 6, 7, 8], [9.5, 1, 3, 1]], 1)
