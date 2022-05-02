@@ -3,7 +3,7 @@
 import random
 matrix = [[random.randint(0, 1) for i in range(4)] for j in range(4)]
 print(matrix)
-rows = [[column [0] for column in matrix]]
-rows.sort()
+columns = [[column [0] for column in matrix]]
+columns .sort()
 print(f"Largest row index: {matrix.index(max(matrix))}")
-print(f"Largest column index: {column[-1]})")
+print(f"Largest column index: {matrix.index(columns[-1])}")
