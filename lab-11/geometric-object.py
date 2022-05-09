@@ -15,3 +15,7 @@ class GeometricObject:
                 semi-perimeter = 0.5 * (self.side1 + self.side2 + self.side3)
                 return math.sqrt(semi-perimeter * (semi-perimeter - side1) * (semi-perimeter - side2) * (semi-perimeter- side3))
 
+            def getPerimeter(self):
+                return self.side1 + self.side2 + self.side3
+
+
