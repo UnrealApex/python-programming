@@ -32,4 +32,4 @@ class Account:
         self.__balance -= amount
 
     def deposit(self, amount):
-        pass
+        self.__balance += amount
