@@ -41,5 +41,7 @@ def main_menu(id):
         eval(f"account_{id}.deposit({deposit_amount})")
         print(f"${deposit_amount} was deposited  successfully\nYour new balance is {account_{id}.get_balance()}")
         get_id()
+    else if (selection == 4):
+        exit()
 
 get_id()
