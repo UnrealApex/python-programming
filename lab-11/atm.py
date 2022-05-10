@@ -14,7 +14,7 @@ account_9 = Account(9 + 1, 100)
 def get_id():
     global id
     id = input("Enter an account id")
-    if (0 < id < 10):
+    if (0 < int(id) < 10):
         main_menu(id)
     else:
         print("Invalid id, try again!")
@@ -29,6 +29,8 @@ def main_menu(id):
           ")
     selection = int(input("Enter your selection here: "))
     if (selection == 1):
-        eval(f"account_{id}.get_balance()")
+        print(eval(f"account_{id}.get_balance()"))
+
+
 
 get_id()
