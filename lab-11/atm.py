@@ -1,15 +1,15 @@
 # TODO: validate if id given is an integer
 from account import Account
 
-account_1 = Account(1 + 2, 100)
-account_2 = Account(2 + 1, 100)
-account_3 = Account(3 + 1, 100)
-account_4 = Account(4 + 1, 100)
-account_5 = Account(5 + 1, 100)
-account_6 = Account(6 + 1, 100)
-account_7 = Account(7 + 1, 100)
-account_8 = Account(8 + 1, 100)
-account_9 = Account(9 + 1, 100)
+account_1 = Account(1, 100)
+account_2 = Account(2, 100)
+account_3 = Account(3, 100)
+account_4 = Account(4, 100)
+account_5 = Account(5, 100)
+account_6 = Account(6, 100)
+account_7 = Account(7, 100)
+account_8 = Account(8, 100)
+account_9 = Account(9, 100)
 
 def get_id():
     global id
