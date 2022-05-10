@@ -11,6 +11,7 @@ account_7 = Account(7, 100)
 account_8 = Account(8, 100)
 account_9 = Account(9, 100)
 
+
 def get_id():
     global id
     id = input("Enter an account id")
@@ -19,6 +20,7 @@ def get_id():
     else:
         print("Invalid id, try again!")
         get_id()
+
 
 def main_menu(id):
     print("Main Menu\n\
@@ -31,19 +33,23 @@ def main_menu(id):
     if (selection == 1):
         print(eval(f"account_{id}.get_balance()"))
         get_id()
-    else if (selection == 2):
-        withdraw_amount = float(prompt("Enter the amount of money you would like to withdraw: "))
+    elif (selection == 2):
+        withdraw_amount = float(
+            prompt("Enter the amount of money you would like to withdraw: "))
         eval(f"account_{id}.withdraw({withdraw_amount})")
         print(f"${withdraw_amount} was withdrawed successfully\nYour new balance is {account_{id}.get_balance()}")
         get_id()
-    else if (selection == 3):
-        deposit_amount  = float(prompt("Enter the amount of money you would like to deposit: "))
+    elif (selection == 3):
+        deposit_amount = float(
+            prompt("Enter the amount of money you would like to deposit: "))
         eval(f"account_{id}.deposit({deposit_amount})")
-        print(f"${deposit_amount} was deposited  successfully\nYour new balance is {account_{id}.get_balance()}")
+        print(f"${deposit_amount} was deposited  successfully\n\
+        Your new balance is {account_{id}.get_balance()}")
         get_id()
-    else if (selection == 4):
+    elif (selection == 4):
         exit()
-    else: 
+    else:
         print("Error")
+
 
 get_id()
