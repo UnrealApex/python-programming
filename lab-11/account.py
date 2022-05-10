@@ -23,7 +23,7 @@ class Account:
         self.__annual_interest_rate = new_annual_interest_rate
 
     def get_monthly_interest(self):
-        pass
+        return self.__balance * (annual_interest_rate / 0.12)
     
     def get_monthly_interest_rate(self):
         pass
