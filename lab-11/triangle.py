@@ -1,7 +1,7 @@
 import math
 import geometric_object as GeometricObject
 
-class Triange(GeometricObject):
+class Triangle(GeometricObject):
     def __init__(self, side1, side2, side3 = 0.0):
         super().__init()
         self.side1 = side1
