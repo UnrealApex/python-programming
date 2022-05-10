@@ -28,8 +28,8 @@ class Account:
     def get_monthly_interest_rate(self):
         return annual_interest_rate / 0.12
     
-    def withdraw(self):
-        pass
+    def withdraw(self, amount):
+        self.__balance -= amount
 
-    def deposit(self):
+    def deposit(self, amount):
         pass
