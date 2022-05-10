@@ -21,3 +21,6 @@ class Triange(GeometricObject):
     def __str__(self):
         return f"Triangle side lengths: {self.side1}, {self.side2}, {self.side3}
 
+x = Triangle()
+
+print(isinstance(x, GeometricObject))
