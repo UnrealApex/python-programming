@@ -14,11 +14,11 @@ account_9 = Account(i + 1, 100)
 def get_id():
     global id
     id = prompt("Enter an account id")
-        if (isinstance(id, str) and 0 < id < 10):
-            main_menu(id)
-        else:
-            print("Invalid id, try again!")
-            get_id()
+    if (isinstance(id, str) and 0 < id < 10):
+        main_menu(id)
+    else:
+        print("Invalid id, try again!")
+        get_id()
 
 def main_menu(id)
     print("Main Menu\
