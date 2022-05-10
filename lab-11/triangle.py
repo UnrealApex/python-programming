@@ -1,5 +1,5 @@
 import math
-import geometric_object as GeometricObject
+from geometric_object import GeometricObject
 
 class Triangle(GeometricObject):
     def __init__(self, side1, side2, side3 = 0.0):
@@ -21,6 +21,8 @@ class Triangle(GeometricObject):
     def __str__(self):
         return f"Triangle side lengths: {self.side1}, {self.side2}, {self.side3}"
 
-x = Triangle()
+x = Triangle(1, 2, 3)
 
 print(isinstance(x, GeometricObject))
+x.setColor("blue")
+print(x.getColor())
