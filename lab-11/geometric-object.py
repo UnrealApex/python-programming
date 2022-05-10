@@ -1,22 +1,19 @@
-import math
 class GeometricObject:
-    def __init__(self):
+    def __init__(self, color = "blue", filled = True):
+        self.__color = color
+        self.__filled = filled
 
-        class Triange(GeometricObject):
-            # def __init__(self, side1, side2, side3 = 0.0, base = "side1", height = 0.0)
-            def __init__(self, side1, side2, side3 = 0.0)
-                self.side1 = side1
-                self.side2 = side2
-                self.side2 = side3
+    def getColor(self):
+        return self.__color
 
-            def getArea(self):
-                """return the area of a given Triangle instance"""
-                # return 0.5 * (self.base * self.height)
-                # get triangle area using Heron's formula
-                semi-perimeter = 0.5 * (self.side1 + self.side2 + self.side3)
-                return math.sqrt(semi-perimeter * (semi-perimeter - side1) * (semi-perimeter - side2) * (semi-perimeter- side3))
+    def setColor(self, color):
+        self.__color = color
 
-            def getPerimeter(self):
-                return self.side1 + self.side2 + self.side3
+    def isFilled(self):
+        return self.__filled
 
+    def setFilled(self, filled):
+        self.__filled = filled
 
+    def __str__(self):
+        return f"color: {self.__color}\nfilled: {self.__filled}"
