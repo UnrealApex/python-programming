@@ -30,7 +30,11 @@ def main_menu(id):
     selection = int(input("Enter your selection here: "))
     if (selection == 1):
         print(eval(f"account_{id}.get_balance()"))
-
+    else if(selection == 2):
+        withdraw_amount = float(prompt("Enter the amount of money you would like to withdraw: "))
+        eval(f"account_{id}.withdraw({withdraw_amount})")
+        print(f"${withdraw_amount} was withdrawed successfully")
+        
 
 
 get_id()
