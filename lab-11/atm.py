@@ -22,8 +22,8 @@ def get_id():
 
 def main_menu(id):
     print("Main Menu\
-        1: check balance
-        2: withdraw
-        3: deposit
-        4: exit
+        1: check balance\
+        2: withdraw\
+        3: deposit\
+        4: exit\
           ")
