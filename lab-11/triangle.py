@@ -19,7 +19,7 @@ class Triange(GeometricObject):
         return self.side1 + self.side2 + self.side3
 
     def __str__(self):
-        return f"Triangle side lengths: {self.side1}, {self.side2}, {self.side3}
+        return f"Triangle side lengths: {self.side1}, {self.side2}, {self.side3}"
 
 x = Triangle()
 
