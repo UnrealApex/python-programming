@@ -2,7 +2,7 @@ import math
 import GeometricObject
 
 class Triange(GeometricObject):
-    def __init__(self, side1, side2, side3 = 0.0)
+    def __init__(self, side1, side2, side3 = 0.0):
         self.side1 = side1
         self.side2 = side2
         self.side2 = side3
