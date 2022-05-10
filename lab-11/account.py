@@ -26,7 +26,7 @@ class Account:
         self.__balance * (annual_interest_rate / 0.12)
     
     def get_monthly_interest_rate(self):
-        pass
+        return annual_interest_rate / 0.12
     
     def withdraw(self):
         pass
