@@ -29,3 +29,5 @@ def main_menu(id):
     selection = int(input("Enter your selection here: "))
     if (selection == 1):
         eval(f"account_{id}.get_balance()")
+
+get_id()
