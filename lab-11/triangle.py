@@ -1,5 +1,5 @@
 import math
-import GeometricObject
+import geometric_object as GeometricObject
 
 class Triange(GeometricObject):
     def __init__(self, side1, side2, side3 = 0.0):
