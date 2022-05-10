@@ -43,5 +43,7 @@ def main_menu(id):
         get_id()
     else if (selection == 4):
         exit()
+    else: 
+        print("Error")
 
 get_id()
