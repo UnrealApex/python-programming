@@ -1,3 +1,4 @@
+# TODO: validate if id given is an integer
 from account import Account
 
 account_1 = Account(1 + 2, 100)
@@ -12,8 +13,8 @@ account_9 = Account(9 + 1, 100)
 
 def get_id():
     global id
-    id = prompt("Enter an account id")
-    if (isinstance(id, str) and 0 < id < 10):
+    id = input("Enter an account id")
+    if (0 < id < 10):
         main_menu(id)
     else:
         print("Invalid id, try again!")
