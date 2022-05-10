@@ -20,13 +20,10 @@ def get_id():
         print("Invalid id, try again!")
         get_id()
 
-def main_menu(id)
+def main_menu(id):
     print("Main Menu\
         1: check balance
         2: withdraw
         3: deposit
         4: exit
           ")
-    selection = int(input("Enter your selection here: "))
-    if (selection == 1):
-        eval(f"account_{id}.get_balance()")
