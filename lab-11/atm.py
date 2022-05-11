@@ -49,6 +49,7 @@ def main_menu(id):
         print(f"${deposit_amount} deposited  successfully for account {id}\nYour new balance is ${eval(f'account_{id}.get_balance()')}")
         get_id()
     elif (selection == 4):
+        print("Thank you for using the ATM!\nProgram will now exit.")
         exit()
     else:
         print("Error")
