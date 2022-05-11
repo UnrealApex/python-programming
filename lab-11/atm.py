@@ -1,6 +1,9 @@
 # TODO: validate if id given is an integer
 from account import Account
 
+# for i in range(1, 9):
+#   eval(f"account_{i} = Account({i}, 100)")
+
 account_1 = Account(1, 100)
 account_2 = Account(2, 100)
 account_3 = Account(3, 100)
@@ -37,14 +40,13 @@ def main_menu(id):
         withdraw_amount = float(
             prompt("Enter the amount of money you would like to withdraw: "))
         eval(f"account_{id}.withdraw({withdraw_amount})")
-        print(f"${withdraw_amount} was withdrawed successfully\nYour new balance is {account_{id}.get_balance()}")
+        print(f"${withdraw_amount} was withdrawed successfully\nYour new balance is {eval('account_'+ id + '.get_balance()')}")
         get_id()
     elif (selection == 3):
         deposit_amount = float(
             prompt("Enter the amount of money you would like to deposit: "))
         eval(f"account_{id}.deposit({deposit_amount})")
-        print(f"${deposit_amount} was deposited  successfully\n\
-        Your new balance is {account_{id}.get_balance()}")
+        print(f"${deposit_amount} was deposited  successfully\nYour new balance is {eval('account_' + id + '.get_balance()')}")
         get_id()
     elif (selection == 4):
         exit()
