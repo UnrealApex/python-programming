@@ -3,13 +3,13 @@ class Account:
         self.__id = id
         self.__balance = balance
         self.annual_interest_rate = annual_interest_rate
-    
+
     def get_id(self):
         return self.__id
-    
+
     def set_id(self, new_id):
         self.__id = new_id
-        
+
     def get_balance(self):
         return self.__balance
 
@@ -18,16 +18,16 @@ class Account:
 
     def get_annual_interest_rate(self):
         return self.__annual_interest_rate
-    
+
     def set_annual_interest_rate(self, new_annual_interest_rate):
         self.__annual_interest_rate = new_annual_interest_rate
 
     def get_monthly_interest(self):
-        self.__balance * (annual_interest_rate / 0.12)
-    
+        self.__balance * (self.__annual_interest_rate / 0.12)
+
     def get_monthly_interest_rate(self):
-        return annual_interest_rate / 0.12
-    
+        return self.__annual_interest_rate / 0.12
+
     def withdraw(self, amount):
         self.__balance -= amount
 
