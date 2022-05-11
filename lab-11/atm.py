@@ -27,10 +27,10 @@ def get_id():
 
 def main_menu(id):
     print("Main Menu\n\
-        1: check balance\n\
-        2: withdraw\n\
-        3: deposit\n\
-        4: exit\n\
+      1: check balance\n\
+      2: withdraw\n\
+      3: deposit\n\
+      4: exit\n\
           ")
     selection = int(input("Enter your selection here: "))
     if (selection == 1):
