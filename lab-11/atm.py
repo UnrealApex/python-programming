@@ -17,7 +17,7 @@ account_9 = Account(9, 100)
 
 def get_id():
     global id
-    id = input("Enter an account id")
+    id = input("Enter an account id: ")
     if (0 < int(id) < 10):
         main_menu(id)
     else:
