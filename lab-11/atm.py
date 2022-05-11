@@ -34,19 +34,19 @@ def main_menu(id):
           ")
     selection = int(input("Enter your selection here: "))
     if (selection == 1):
-        print(eval(f"account_{id}.get_balance()"))
+        print(f"${eval(f'account_{id}.get_balance()')} in account {id}")
         get_id()
     elif (selection == 2):
         withdraw_amount = float(
             input("Enter the amount of money you would like to withdraw: "))
         eval(f"account_{id}.withdraw({withdraw_amount})")
-        print(f"${withdraw_amount} was withdrawed successfully\nYour new balance is ${eval('account_'+ id + '.get_balance()')}")
+        print(f"${withdraw_amount} was withdrawed successfully\nYour new balance is ${eval(f'account_{id}.get_balance()')}")
         get_id()
     elif (selection == 3):
         deposit_amount = float(
             input("Enter the amount of money you would like to deposit: "))
         eval(f"account_{id}.deposit({deposit_amount})")
-        print(f"${deposit_amount} was deposited  successfully\nYour new balance is ${eval('account_' + id + '.get_balance()')}")
+        print(f"${deposit_amount} was deposited  successfully\nYour new balance is ${eval(f'account_{id}.get_balance()')}")
         get_id()
     elif (selection == 4):
         exit()
