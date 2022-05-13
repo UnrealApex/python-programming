@@ -3,7 +3,6 @@ class Stack(list):
     super().__init__()
     self.stack = []
 
-
   def getStack(self):
     """Prompts the user to enter five strings and stores them in a stack."""
     for i in range(5):
