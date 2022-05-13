@@ -1,8 +1,4 @@
-# TODO: validate if id given is an integer
 from account import Account
-
-# for i in range(1, 9):
-#   eval(f"account_{i} = Account({i}, 100)")
 
 account_1 = Account(1, 100)
 account_2 = Account(2, 100)
