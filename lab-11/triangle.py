@@ -25,4 +25,6 @@ x = Triangle(1, 2, 3)
 
 print(isinstance(x, GeometricObject))
 x.setColor("blue")
+x.setFilled(True)
 print(x.getColor())
+print(x.isFilled())
