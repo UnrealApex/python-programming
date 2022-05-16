@@ -1,4 +1,5 @@
 import os
+
 def occurance_remover(file_path, removal_string):
     occurances = open(file_path, "r").read().count(removal_string)
     # Read in the file
