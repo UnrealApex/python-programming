@@ -14,4 +14,4 @@ def occurance_remover(file_path, removal_string):
     file.close()
     print(f"Removed {occurances} {'occurances' if (occurances != 1) else 'occurance'} of {removal_string} from {os.path.basename(file_path)}")
     
-occurance_remover(r"C:\Users\s158658\src\python-programming\lab-12\test.txt", "foo")
+occurance_remover(os.path.expanduser('~') + "\\src\\python-programming\\lab-12\\test.txt", "foo")
