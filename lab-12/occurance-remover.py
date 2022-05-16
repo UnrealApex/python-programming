@@ -12,6 +12,6 @@ def occurance_remover(file_path, removal_string):
     with open(file_path, 'w') as file:
       file.write(filedata)
     file.close()
-    print(f"Removed {occurances} occurances of {removal_string} from {os.path.basename(file_path)}")
+    print(f"Removed {occurances} {'occurances' if (occurances != 1) else 'occurance'} of {removal_string} from {os.path.basename(file_path)}")
     
 occurance_remover(r"C:\Users\s158658\src\python-programming\lab-12\test.txt", "foo")
